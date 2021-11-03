@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 280px;
+    }
+
+    article {
+      display: block;
+      text-align: justify-all;
+      width: auto;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .square {
+      width: 2.5%;
+      min-width: 36px;
+      height: 50px;
+      margin-right: 1.25%;
+      margin-left: 1.25%;
+      display: inline-block;
+      background-color: #4738F2;
+      overflow: hidden;
+      -ms-transform: skew(-30deg);
+      /* IE 9 */
+      -webkit-transform: skew(-30deg);
+      /* Chrome, Safari, Opera */
+      transform: skew(-30deg);
+      /* Standard syntax */
+    }
+
+    .dashContainer {
+      max-width: 650px;
+      height: 50px;
+      overflow: hidden;
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: 485px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+      .dashContainer {
+        max-width: 100vw;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="dashContainer">
+      <div id="up-dash" class="square"></div>
+    </div>
+  </header>
+  <article>
+    <img class="bi me-2" src="img/logo.png" width="160" height="80" />
+    <h1>Página no encontrada</h1>
+    <p>Disculpe las molestias, pero la página que desea ver no existe</p>
+    <h1><small>Page not found</small></h1>
+    <p><small>Sorry, but the page you were trying to view does not exist.</small></p>
+  </article>
+  <footer>
+    <div class="dashContainer">
+      <div id="down-dash" class="square"></div>
+    </div>
+  </footer>
+  <script>
+    function multiplyNode(node, count, deep) {
+      for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+      }
+    }
+    var qty = window.innerWidth / 50;
+    multiplyNode(document.querySelector('#up-dash'), qty, true);
+    multiplyNode(document.querySelector('#down-dash'), qty, true);
+  </script>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

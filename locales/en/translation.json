@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Professional Experience",
+    "education": "Education",
+    "courses": "Courses",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Engineer. Geek. Developer.",
+    "description": "Cybernetics Engineer with more than 9 years of experience in the Information Technology area, mainly in Technical Support and Web Development.",
+    "contact": "Contact",
+    "viewResume": "View Resume"
+  },
+  "experience": {
+    "infosys": {
+      "position": "Lead Information Technology Analyst",
+      "description": "Representante de Soporte Técnico para Google Cloud Plataform. \nDoy soporte de productos de Google Cloud Platform a usuarios en foros comunitarios como Stack Overflow, Google Groups y Google Community."
+    },
+    "grupoCSI": {
+      "position": "Web Developer",
+      "description": "I created and updated the styles of the web applications of the company’s clients in accordance with the mockups of the design area.\nI made the implementation of the styles of the HBSC’s capture platform for their product according to the guidelines required by the bank.\nI updated the styles for the different credit origination and administration platforms of Santander.\nI implemented styles for the affiliate card origination platforms of different clients of the company."
+    },
+    "jcdecaux": {
+      "position": "Support Engineer Sr.",
+      "description": "I provided first level technical support to users in Mexico and South America.\nI developed a system that manages the registration of computer equipment and assigned cell phones.\nI provided technical support to the infrastructure of the company in the corporate office in Mexico City and branches in the interior of the republic and South America."
+    },
+    "mmm": {
+      "position": "Data Analyst Jr.",
+      "description": "I did the data cleansing of the customer base used by the sales force.\nI made the correlation of the clients of the different business areas. I defined the business rules to detect and avoid duplication of records."
+    },
+    "magnabyte": {
+      "position": "SUpport Engineer Jr.",
+      "description": "First level support for users of all levels in several companies.\nImplementation of new technologies. Implementation of remote desktops.\nImplementation of NAS to access from the internet. Basic Programming in Linux bash script."
+    }
+  },
+  "education": {
+    "lasalle": {
+      "university": "La Salle University",
+      "bachelor": "Cybernetics and Computer Systems Engineer",
+      "status": "Graduated"
+    }
+  },
+  "courses": {
+    "ace": {
+      "title": "Associate Cloud Engineer",
+      "description": "A Google Associate Cloud Engineer is responsible for deploying applications, overseeing operations of various projects, and maintaining business solutions to ensure they meet stated performance metrics. This person has experience with public clouds and on-premises solutions."
+    },
+    "javaSE8": {
+      "title": "Java SE 8 Programming",
+      "description": "This Java SE 8 programming course covers the core features of the language and application programming interfaces (APIs) you'll use to design object-oriented applications with Java Standard Edition 8."
+    },
+    "weblogic12c": {
+      "title": "Developing Applications with Java EE 6 on WebLogic Server 12c",
+      "description": "The Application Development with Java EE 6 in WebLogic Server 12c course teaches the skills necessary to successfully build and deploy enterprise applications."
+    },
+    "jax": {
+      "title": "Java EE 6: Develop Web Services with JAX-WS & JAX-RS",
+      "description": "This Java EE 6 programming course covers the design and creation of SOAP and RESTful web services and clients. You will use the NetBeans Integrated Development Environment (IDE) to develop JAX-WS and JAX-RS web services and deploy those services on Oracle WebLogic Server 12c."
+    },
+    "ios": {
+      "title": "Development of Applications for Mobile Devices",
+      "description": "Practical course of programming in iOS based on patterns and programming with knowledge in memory management, with the ability to create applications for Mobile Devices for iPhone and iPad."
+    },
+    "winServer": {
+      "title": "Installation and Configuration of Windows Server 2010",
+      "description": "This course is intended for professionals who have some knowledge and experience working with Windows and who want to gain the skills and knowledge necessary to install and initially configure a Windows Server 2012 or Windows Server 2012 R2 server in an existing Windows server environment."
+    },
+    "timeMgm": {
+      "title": "Time management",
+      "description": "At the end of the time management course, the participant will identify and assess the need for the rational and productive use of time, through the analysis of its cost-benefit implications and the application of methods that lead to the optimization of this resource in activities. both personal and organizational."
+    }
+  },
+  "portfolio": {
+    "ventaAutos": {
+      "title": "Technical test: \"Cars Sale\"",
+      "description": "Technical test, with a cars sale as the central topic."
+    },
+    "cuestionario": {
+      "title": "Questionary",
+      "description": "Technical test where several guidelines should have been followed."
+    },
+    "canadagame": {
+      "title": "100 Canadians said",
+      "description": "English version of the popular game \"100 Mexicans said\", with curiosities about Canada, in the fields of Geography and History of that country. Created specifically for mobile."
+    },
+    "copamundialfutbol": {
+      "title": "FIFA World Cup",
+      "description": "Page with information on the Russia 2018 World Cup. Stored in Azure, created with AngularJS as a view, PHP as a controller and MSSQL in the data model."
+    },
+    "rogerblog": {
+      "title": "Roger's blog",
+      "description": "Blog project, migrated from Blogger. Implemented with Wordpress and deployed in Azure."
+    },
+    "cdmxOneDay": {
+      "title": "One day at Mexico City",
+      "description": "Video created for an extracurricular class during the degree to highlight the cultural contrasts in Mexico."
+    },
+    "blah": {
+      "title": "Presidential Debate - #BlahMX2018",
+      "description": "Video created on the occasion of the 2018 presidential elections in Mexico and the song Blah blah blah by Armin van Buuren as political satire."
+    },
+    "mx48": {
+      "title": "Freelance webpage",
+      "description": "Website, made as a hobby, for the Dance Cover Idol MX48 group."
+    },
+    "": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "contact": {
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "Whatsapp",
+    "telegram": "Telegram"
+  },
+  "modal": {
+    "close": "Close",
+    "download": "Download"
+  },
+  "date": {
+    "period": "{{date, range}}",
+    "present": "Present"
+  },
+  "phone": "{{phone, phone}}",
+  "skill": {
+    "development": "Development",
+    "mobile": "Mobile",
+    "server": "Server",
+    "infrastructure": "Infrastructure",
+    "scheduling": "Scheduling",
+    "time-management": "Time management",
+    "webDesign": "Web Design",
+    "webLayout": "Web Layout",
+    "videoEdition": "Video edition"
+  },
+  "assets": {
+    "resume": "Resume"
+  }
+}

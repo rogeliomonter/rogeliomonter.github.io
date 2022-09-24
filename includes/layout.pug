@@ -1,0 +1,40 @@
+doctype html
+html(lang="es")
+    include head.pug
+    body 
+        include navbar.pug
+        #content.container.shadow-sm.rounded-2.pb-md-3
+            section#home.px-4.py-5.my-5.text-center.hero
+                include hero.pug
+            section(id=sections[1])
+                +sectionTitle(sections[1])
+                each workplace, index in experiences
+                    +experience(Object.keys(workplace)[0], workplace[Object.keys(workplace)[0]])
+            section(id=sections[2])
+                +sectionTitle(sections[2])
+                each school, index in education
+                    +education(Object.keys(school)[0], school[Object.keys(school)[0]])
+            section(id=sections[3])
+                +sectionTitle(sections[3])
+                .row(data-masonry='{"percentPosition": true }')
+                    each course, index in courses
+                        +course(Object.keys(course)[0], course[Object.keys(course)[0]])
+            section(id=sections[4])
+                +sectionTitle(sections[4])
+                .row.grid(data-masonry='{"percentPosition": true }')
+                    each item, index in portfolio
+                        +portfolio(Object.keys(item)[0], item[Object.keys(item)[0]])
+            section(id=sections[5])
+                +sectionTitle(sections[5])
+                .row
+                    each item, index in contact
+                        +contact(Object.keys(item)[0], item[Object.keys(item)[0]])
+        include footer.pug
+        //- footer.footer.sticky-bottom
+        //-     .container
+        //-         span.text-muted Place sticky footer content here.
+        include modal.pug
+        
+        include script.pug
+        script.
+            const phoneNumber = libphonenumber.parsePhoneNumber('#{phone}','#{countryCode}')

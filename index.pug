@@ -1,0 +1,33 @@
+//- Resume owner information
+- var name = "Rogelio Monter" 
+- var phone = "525562101577"
+- var countryCode ="MX" //Use country code from https://gitlab.com/catamphetamine/libphonenumber-js/#country-code
+- var email = "contact@rogeliomonter.com"
+- var telegram ="rogelio_monter"
+//-social
+- var stackOverflow="13171940"
+- var linkedin= "rogeliomonter"
+- var github = "rogeliomonter"
+
+//- sections
+- var sections = ["home", "experience", "education", "courses", "portfolio", "contact"]
+
+//- experience
+- var experiences = [{infosys: {workplace: "Infosys", date: '"June 2021","now"'}},{grupoCSI:{workplace: "Centro de Soluciones en Informática", date:'"Jul 2017","Jun 2021"'}},{jcdecaux:{workplace: "JCDecaux", date:'"Mar 2014","Dec 2016"'}}, {mmm: {workplace: "3M México", date:'"Sep 2013","Mar 2014"'}},{magnabyte: {workplace: "Magnabyte", date:'"Jun 2012","Jul 2013"' }}]
+
+//- education
+
+- var education = [{lasalle: {date: '"Aug 2008","Dec 2012"'}}]
+
+//- courses
+- var courses =[{ace:{place: "Google", skills:{cloud: "Cloud", google:"Google"}}}, {javaSE8:{place: "Compueducación - Oracle University", skills:{java: "Java", code: "development"}}},{weblogic12c:{place: "Compueducación - Oracle University", skills:{java: "Java", code: "development"}}}, {jax:{place: "Compueducación - Oracle University", skills:{java: "Java", code: "development", server: "Back-End"}}}, {ios:{place: "Aster - Grupo Scanda", skills:{'app-store-ios': "iOS", 'mobile': "mobile", code: "development"}}}, {winServer:{place: "Aster - Grupo Scanda", skills:{windows: "Windows Server", server: "server", tools: "infrastructure"}}}, {timeMgm:{place:"Agrupación de Capacitadores y Educadores de México", skills:{'list-check': "scheduling", 'hourglass-half':"time-management"}}}]
+
+//- portfolio
+- var portfolio=[{mx48:{link:"https://mx48oficial.azurewebsites.net/", skills:{html5: "HTML5", css3: "CSS3", js:"Javascript"}}}, {ventaAutos:{link:"http://rmonter-ventaautos.azurewebsites.net/", skills:{swatchbook: "webDesign", 'layer-group':"webLayout", html5: "HTML5", css3: "CSS3", bootstrap: "Bootstrap"}}}, {cuestionario:{link:"https://rmonter-cuestionario.azurewebsites.net/", skills:{html5: "HTML5", css3: "CSS3", js: "Javascript"}}}, {canadagame:{link:"https://rmonter-canadagame.azurewebsites.net/", skills:{swatchbook: "webDesign", 'mobile': "mobile", html5: "HTML5", css3: "CSS3", js: "Javascript"}}},{copamundialfutbol:{link:"https://rmonter-copamundialfutbol.azurewebsites.net", skills:{swatchbook: "webDesign", 'layer-group':"webLayout", html5: "HTML5", css3: "CSS3", bootstrap: "Bootstrap", php:"PHP", angular: "Angular", database:"MSSQL", microsoft:"Azure"}}},{rogerblog:{link:"https://rogerblog.azurewebsites.net/", skills:{wordpress: "Wordpress", microsoft: "Azure"}}}, {cdmxOneDay:{link:"https://www.youtube.com/watch?v=Peo-kpb2Ut0", skills:{film:"Video", "clapperboard": "videoEdition"}}},{blah: {link:"https://www.youtube.com/watch?v=4wq_DJX0oRY", skills:{film:"Video", "clapperboard": "videoEdition"}}}]
+
+//- contact
+- var contact=[{phone:{link:"tel:+", contact: phone, icon: "fas fa-phone"}}, {email:{link:"mailto:", contact: email, icon: "fas fa-envelope"}}, { whatsapp:{link:"https://wa.me/", contact: phone, icon: "fab fa-whatsapp"}}, { telegram:{link:"https://t.me/", contact: telegram, icon: "fab fa-telegram"}}]
+
+include includes/mixins.pug
+
+include includes/layout.pug

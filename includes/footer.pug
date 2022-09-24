@@ -1,0 +1,7 @@
+footer#footer.pt-4.my-md-5
+    .d-flex.justify-content-center.flex-column
+        p.text-center #{name} &copy; 
+            script.
+                document.write(new Date().getFullYear());
+        p.text-center 
+            a(href="mailto:"+email) #{email}

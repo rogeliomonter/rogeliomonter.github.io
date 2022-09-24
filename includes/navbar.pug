@@ -1,0 +1,29 @@
+header.py-3.pb-sm-0.d-none.d-sm-block
+    .container.d-flex.flex-wrap.justify-content-center
+        a(href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none")
+            img(class="bi me-2" src="img/logo.png" height="80")
+        .col-12.col-lg-auto.mb-3.mb-lg-0.text-md-end
+            a(href="mailto:"+email class="nav-link link-light" target="_blank")
+                i.fas.fa-envelope
+                | &nbsp;
+                | #{email}
+            a(href="https://wa.me/"+phone class="nav-link link-light" target="_blank")
+                i(class="fab fa-whatsapp") 
+                | &nbsp;
+                span(data-i18n="phone" data-i18n-options='{ "phone": ['+phone+']}')
+nav.navbar.navbar-expand-lg.py-2.mb-4.sticky-top.navbar-dark.bg-primary.border-bottom.shadow-sm
+    .container
+        a.navbar-brand.d-flex.align-items-center.me-md-auto.text-light.text-decoration-none.d-block.d-sm-block.d-md-none(href="/")
+            img.bi.me-2.p-1(src="img/logo.png" height="60")
+            | #{name}
+        button.navbar-toggler.float-end(type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+            span.fas.fa-bars
+        #navbar.collapse.navbar-collapse
+            ul.nav.me-auto.d-flex.justify-content-center.w-100
+                each section in sections
+                    li.nav-item
+                        a(class="nav-link link-light px-2 active" href="#"+section data-i18n="nav."+section)
+            div.d-flex.justify-content-end
+                label.col-form-label.me-3
+                    i.fas.fa-globe
+                select#languageSwitcher(class="form-select form-select-sm" name="language")

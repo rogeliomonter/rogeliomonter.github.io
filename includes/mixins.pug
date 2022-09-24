@@ -1,0 +1,90 @@
+mixin sectionTitle(section)
+    h2.text-center.text-black-50(data-i18n="nav."+section)
+
+mixin experience(workplace, details)
+    .d-md-flex.align-items-center.p-3
+        .col-md-3
+            img.mx-auto.d-block.one-edge-shadow(src="img/"+workplace+".jpg")
+        .col-md-8
+            h3.text-primary.pt-2(data-i18n="experience."+workplace+".position")
+            h4.text-primary #{details.workplace}
+                | &nbsp;
+                small(data-i18n="date.period" data-i18n-options='{ "date": ['+details.date+']}')
+            p(data-i18n="experience."+workplace+".description")
+
+mixin education(school, details)
+    .d-md-flex.align-items-center.p-3
+        .col-md-3
+            img.mx-auto.d-block.one-edge-shadow(src="img/"+school+".jpg")
+        .col-md-8
+            h3.text-primary.pt-2(data-i18n="education."+school+".university")
+            h4.text-primary(data-i18n="education."+school+".bachelor") 
+                | &nbsp;
+            h4.text-primary
+                small(data-i18n="date.period" data-i18n-options='{ "date": ['+details.date+']}')
+            p(data-i18n="education."+school+".status")
+
+mixin course(course, details)
+    .col-sm-4.p-1.mb-2
+        .card
+            .card-header
+                h5.card-title(data-i18n="courses."+course+".title")
+                h6.card-subtitle.mb-2.text-muted #{details.place}
+            .card-body 
+                p.card-text(data-i18n="courses."+course+".description")
+            .card-footer.text-end.text-muted 
+                +skill(details.skills)
+
+mixin portfolio(item, details)
+    .col-sm-4.p-1.mb-2
+        .card
+            a(href=details.link target="_blank")
+                img.card-img-top.project(src="img/portfolio/" + item + ".png" data-i18n="[alt]portfolio."+item+".title" target="_blank")
+            .card-body               
+                h5.card-title.text-center 
+                    a.btn.btn-light(href=details.link target="_blank" data-i18n="portfolio."+item+".title")
+                        | &nbsp;   
+                        i.fas.fa-arrow-up-right-from-square
+                p.card-text(data-i18n="portfolio."+item+".description")
+            .card-footer.text-end.text-muted 
+                +skill(details.skills)
+
+mixin contact(item, details)
+    .col.p-1
+        .card.text-center
+            .card-body
+                h5.card-title(data-i18n="contact."+item)
+                a.btn.btn-light.d-block(href=details.link+details.contact target="_blank")
+                    i(class=details.icon)
+                    | &nbsp;
+                    case item
+                        when "phone"
+                        when "whatsapp"
+                            span.contact(data-i18n="phone" data-i18n-options='{ "phone": ['+details.contact+']}')
+                        default
+                            span.contact #{details.contact}
+
+mixin skill(skills)
+    each skill, icon in skills ? skills:{'': ""}
+        span.px-1.skill
+            - var iconType
+            case icon
+                //- for brands .fab
+                when "java"
+                when "google"
+                when "app-store-ios"
+                when "windows"
+                when "html5"
+                when "css3"
+                when "bootstrap"
+                when "js"
+                when "php"
+                when "angular"
+                when "microsoft"
+                when "wordpress"
+                    i(class="fab fa-lg mx-1 fa-"+icon)
+                //- else use .fas
+                default
+                    i(class="fas fa-lg mx-1 fa-"+icon)
+            | &nbsp;
+            small(data-i18n="skill."+skill) #{skill}

@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "courses": "Educación Continua",
+    "portfolio": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "subtitle": "Ingeniero. Geek. Programador.",
+    "description": "Ingeniero en Cibernética con más de 9 años de experiencia en el área de Tecnologías de la Información, en empresas de diferentes giros participando en los departamentos de Soporte Técnico y Desarrollo Web.",
+    "contact": "Contacto",
+    "viewResume": "Ver CV"
+  },
+  "experience": {
+    "infosys": {
+      "position": "Líder Analista de Tecnologías de la Información",
+      "description": "Representante de Soporte Técnico para Google Cloud Plataform. \nDoy soporte de productos de Google Cloud Platform a usuarios en foros comunitarios como Stack Overflow, Google Groups y Google Community."
+    },
+    "grupoCSI": {
+      "position": "Desarrollador Front-End",
+      "description": "Realicé la creación y actualización de estilos de las aplicaciones web de los clientes de la empresa conforme a lo mostrado por el área de diseño.\nRealicé la implementación de estilos para el nuevo ERP interno de la empresa.\nRealicé la implementación de estilos de la plataforma de captación de HBSC para su producto \"Mi tienda en línea\" conforme a los lineamientos requeridos por el banco. Además participé en la implementación de la plataforma de comercio electrónico elegida para el este fin.\nRealicé la actualización e implementación de estilos para la diferentes plataformas de originación y administración de créditos de Santander.\nRealicé la actualización de la plataforma de administración documental de CONAVI.\nRealicé implementación de estilos para la plataformas de originación de tarjetas de afiliación de diferentes clientes de la empresa, entre ellos VickyForm, Devlyn, Credis, Cellpay y Crédito Maestro."
+    },
+    "jcdecaux": {
+      "position": "Ingeniero de Soporte Sr.",
+      "description": "Realicé soporte técnico de primer nivel a usuarios de México y Sudamérica.\nProgramé soluciones basadas en web que apoyaron las tareas del área. Desarrollé un sistema que administra el registro de los equipos de cómputo y celulares asignados.\nRealicé el soporte técnico a la infraestructura de la empresa en el corporativo en Ciudad de México y sucursales en el interior de la república y Sudamérica."
+    },
+    "mmm": {
+      "position": "Analista de Bases de Datos Jr.",
+      "description": "Realicé la limpieza de la base de clientes utilizada por la fuerza de ventas.\nRealicé la correlación de los clientes de las diferentes áreas de negocio. Definí las reglas de negocio para detectar y evitar la duplicidad de registros."
+    },
+    "magnabyte": {
+      "position": "Ingeniero de Soporte Jr.",
+      "description": "Realicé soporte técnico de primer nivel a usuarios de varias empresas clientes.\nGeneré los script necesarios para utilizar el ERP de la empresa con escritorios remotos."
+    }
+  },
+  "education": {
+    "lasalle": {
+      "university": "Universidad La Salle",
+      "bachelor": "Ingeniero en Cibernética y Sistemas Computacionales",
+      "status": "Titulado"
+    }
+  },
+  "courses": {
+    "ace": {
+      "title": "Associate Cloud Engineer",
+      "description": "Un Associate Cloud Engineer de Google se encarga de implementar aplicaciones, supervisar operaciones de varios proyectos y mantener soluciones empresariales a fin de asegurarse de que cumplen con las métricas de rendimiento planteadas. Esta persona tiene experiencia con nubes públicas y soluciones locales."
+    },
+    "javaSE8": {
+      "title": "Java SE 8 Programming",
+      "description": "Este curso de programación de Java SE 8 cubre las características centrales del lenguaje y las interfaces de programación de aplicaciones (API) que usará para diseñar aplicaciones orientadas a objetos con Java Standard Edition 8."
+    },
+    "weblogic12c": {
+      "title": "Developing Applications with Java EE 6 on WebLogic Server 12c",
+      "description": "El curso de Desarrollo de Aplicaciones con Java EE 6 en WebLogic Server 12c enseña las habilidades necesarias para construir e implementar exitosamente aplicaciones empresariales."
+    },
+    "jax": {
+      "title": "Java EE 6: Develop Web Services with JAX-WS & JAX-RS",
+      "description": "Este curso de programación de Java EE 6 abarca el diseño y la creación de servicios web SOAP y RESTful y clientes. Utilizará el Entorno de desarrollo integrado de NetBeans (IDE) para desarrollar los servicios web JAX-WS y JAX-RS y desplegar esos servicios en Oracle WebLogic Server 12c."
+    },
+    "ios": {
+      "title": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+      "description": "Curso práctico de programación en iOS basadas en patrones y programación con conocimiento en manejo de memoria, con capacidad de crear aplicaciones para Dispositivos Móviles para iPhone y iPad."
+    },
+    "winServer": {
+      "title": "Instalación y Configuración de Windows Server 2010",
+      "description": "Este curso está dirigido a profesionales que tienen algún conocimiento y experiencia trabajando con Windows y que desean adquirir las habilidades y conocimientos necesarios para instalar y realizar la configuración inicial de un servidor Windows Server 2012 o Windows Server 2012 R2 en un entorno de servidor Windows existente."
+    },
+    "timeMgm": {
+      "title": "Administración del Tiempo",
+      "description": "Al término del curso de administración del tiempo, el participante identificará y valorará la necesidad del uso racional y productivo del tiempo, mediante el análisis de sus implicaciones de costo-beneficio y de la aplicación de métodos que conduzcan a la optimización de ese recurso en actividades tanto personales como organizacionales."
+    }
+  },
+  "portfolio": {
+    "ventaAutos": {
+      "title": "Prueba técnica: \"Venta de Autos\"",
+      "description": "Prueba técnica, con la venta de autos como tema central."
+    },
+    "cuestionario": {
+      "title": "Juego de preguntas",
+      "description": "Prueba técnica dónde se debieron seguir varios lineamientos."
+    },
+    "canadagame": {
+      "title": "100 Canadienses dijeron",
+      "description": "Versión en inglés del popular juego \"100 mexicanos dijeron\", con curiosidades sobre Canadá, en el ámbito de la Geografía e Historia de aquel país. Creado específicamente para móviles."
+    },
+    "copamundialfutbol": {
+      "title": "Copa Mundial FIFA",
+      "description": "Página con información del mundial Rusia 2018. Almacenada en Azure, creada con AngularJS como vista, PHP como controlador y MSSQL en el modelo de datos."
+    },
+    "rogerblog": {
+      "title": "Blog de Roger",
+      "description": "Proyecto de blog, migrado de Blogger. Implementado con Wordpress y desplegado en Azure."
+    },
+    "cdmxOneDay": {
+      "title": "One day at Mexico City",
+      "description": "Video creado para una clase extracurricular durante la carrera para resaltar los contrastes culturales en México."
+    },
+    "blah": {
+      "title": "Debate Presidencial - #BlahMX2018",
+      "description": "Video creado con motivo de las elecciones presidenciales 2018 en México y la canción Blah blah blah de Armin van Buuren como sátira política."
+    },
+    "mx48": {
+      "title": "Página web independiente",
+      "description": "Página web, realizada como hobby, para el grupo Dance Cover Idol MX48."
+    },
+    "": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "contact": {
+    "email": "Correo",
+    "phone": "Teléfono",
+    "whatsapp": "Whatsapp",
+    "telegram": "Telegram"
+  },
+  "modal": {
+    "close": "Cerrar",
+    "download": "Descargar"
+  },
+  "date": {
+    "period": "{{date, range}}",
+    "present": "Actual"
+  },
+  "phone": "{{phone, phone}}",
+  "skill": {
+    "development": "Desarrollo",
+    "mobile": "Móvil",
+    "server": "Servidor",
+    "infrastructure": "Infraestructura",
+    "scheduling": "Organización",
+    "time-management": "Administración del tiempo",
+    "webDesign": "Diseño Web",
+    "webLayout": "Maquetación Web",
+    "videoEdition": "Edición de video"
+  },
+  "assets": {
+    "resume": "CV"
+  }
+}

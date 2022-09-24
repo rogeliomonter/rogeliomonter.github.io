@@ -1,0 +1,26 @@
+#cvPreview.modal.fade(tabindex="-1" aria-labelledby="cvPreviewLabel" aria-hidden="true")
+    .modal-dialog.modal-lg.modal-dialog-scrollable
+        .modal-content 
+            .modal-header
+                h5.modal-title #{name}
+                    | &nbsp;-&nbsp;
+                    span(data-i18n="assets.resume")
+                button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            .modal-body.text-center
+                canvas#pdf
+            .modal-footer
+                a.btn.btn-primary(href="assets/resume.pdf" download="Rogelio Monter.pdf" data-phrase="descargar" data-i18n="modal.download")
+                button.btn.btn-outline-secondary(data-bs-dismiss="modal" data-phrase="cerrar" data-i18n="modal.close")
+
+#modalContact.modal.fade(tabindex="-1" aria-labelledby="modalContactLabel" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered
+        .modal-content 
+            .modal-header
+                h5.modal-title(data-i18n="hero.contact")
+                button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            .modal-body 
+                .row
+                    each item, index in contact
+                        +contact(Object.keys(item)[0], item[Object.keys(item)[0]])
+            .modal-footer
+                button.btn.btn-outline-secondary(data-bs-dismiss="modal" data-phrase="cerrar" data-i18n="modal.close")

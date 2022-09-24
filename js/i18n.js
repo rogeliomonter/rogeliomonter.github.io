@@ -25,7 +25,7 @@ $(function () {
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init(
       {
-        debug: true,
+        //debug: true,
         supportedLngs: ["es", "en"],
         fallbackLng: "en",
       },

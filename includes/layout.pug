@@ -1,10 +1,10 @@
 doctype html
-html(lang="es")
+html(lang="en")
     include head.pug
     body 
         include navbar.pug
         #content.container.shadow-sm.rounded-2.pb-md-3
-            section#home.px-4.py-5.my-5.text-center.hero
+            section#home
                 include hero.pug
             section(id=sections[1])
                 +sectionTitle(sections[1])
@@ -16,12 +16,12 @@ html(lang="es")
                     +education(Object.keys(school)[0], school[Object.keys(school)[0]])
             section(id=sections[3])
                 +sectionTitle(sections[3])
-                .row(data-masonry='{"percentPosition": true }')
+                .row(data-masonry='{"percentPosition": true }').justify-content-evenly
                     each course, index in courses
                         +course(Object.keys(course)[0], course[Object.keys(course)[0]])
             section(id=sections[4])
                 +sectionTitle(sections[4])
-                .row.grid(data-masonry='{"percentPosition": true }')
+                .row.grid(data-masonry='{"percentPosition": true }').justify-content-evenly
                     each item, index in portfolio
                         +portfolio(Object.keys(item)[0], item[Object.keys(item)[0]])
             section(id=sections[5])

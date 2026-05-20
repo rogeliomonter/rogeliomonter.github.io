@@ -36,12 +36,12 @@ $(function () {
         i18next.services.formatter.add("range", (value, lng, options) => {
           return `${moment(value[0], "MMMM YYYY")
             .locale(lng)
-            .format("MMMM YYYY")} - ${
+            .format("YYYY")} - ${
             value[1] == "now"
               ? lng == "es"
                 ? "Actual"
                 : "Present"
-              : moment(value[1], "MMMM YYYY").locale(lng).format("MMMM YYYY")
+              : moment(value[1], "MMMM YYYY").locale(lng).format("YYYY")
           }`;
         });
 

@@ -8,8 +8,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "subtitle": "Engineer. Geek. Developer.",
-    "description": "Cybernetics Engineer with more than 9 years of experience in the Information Technology area, mainly in Technical Support and Web Development.",
+    "subtitle": "Engineer. Developer. Problem Solver.",
+    "description": "Cybernetics Engineer with nearly 14 years of experience specializing in Web Development and software architecture, delivering scalable, high-performance technical solutions since 2012.",
     "contact": "Contact",
     "viewResume": "View Resume"
   },
@@ -38,7 +38,8 @@
   "education": {
     "lasalle": {
       "university": "La Salle University",
-      "bachelor": "Cybernetics and Computer Systems Engineer",
+      "bachelor": "Cybernetics and Computer Systems Engineering",
+      "description": "To generate solutions that contribute to the digital transformation of organizations, through the automation of computer systems and management of business processes with secure information handling, considering international standards and a perspective of sustainability, professional ethics and social responsibility.",
       "status": "Graduated"
     }
   },

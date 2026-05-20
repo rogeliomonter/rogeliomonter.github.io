@@ -1,35 +1,36 @@
 mixin sectionTitle(section)
-    h2.text-center.text-black-50(data-i18n="nav."+section)
+    .section-title
+        h2.text-center.text-black-50(data-i18n="nav."+section)
 
 mixin experience(workplace, details)
-    .d-md-flex.align-items-center.p-3
-        .col-md-3
-            img.mx-auto.d-block.one-edge-shadow(src="img/"+workplace+".jpg")
-        .col-md-8
-            h3.text-primary.pt-2(data-i18n="experience."+workplace+".position")
-            h4.text-primary #{details.workplace}
-                | &nbsp;
-                small(data-i18n="date.period" data-i18n-options='{ "date": ['+details.date+']}')
-            p(data-i18n="experience."+workplace+".description")
+    .d-md-flex.justify-content-center.p-3
+        .col 
+            .card
+                .card-header.text-center 
+                    h3.card-title(data-i18n="experience."+workplace+".position")
+                    h4.card-subtitle.mb-2.text-muted(data-i18n="date.period" data-i18n-options='{ "date": ['+details.date+']}')
+                .card-body 
+                    p(data-i18n="experience."+workplace+".description")
 
 mixin education(school, details)
-    .d-md-flex.align-items-center.p-3
-        .col-md-3
-            img.mx-auto.d-block.one-edge-shadow(src="img/"+school+".jpg")
-        .col-md-8
-            h3.text-primary.pt-2(data-i18n="education."+school+".university")
-            h4.text-primary(data-i18n="education."+school+".bachelor") 
-                | &nbsp;
-            h4.text-primary
-                small(data-i18n="date.period" data-i18n-options='{ "date": ['+details.date+']}')
-            p(data-i18n="education."+school+".status")
+    .d-md-flex.justify-content-center.p-3
+        .col-md-9 
+            .card.text-center
+                .card-header
+                    h3.card-title.pt-2(data-i18n="education."+school+".bachelor")
+                    h4.card-subtitle(data-i18n="date.period" data-i18n-options='{ "date": ['+details.date+']}')
+                .card-body 
+                    h4.text-primary(data-i18n="education."+school+".university") 
+                    p.card-text(data-i18n="education."+school+".description")
+                .card-footer.text-end.text-muted 
+                    span.text-center(data-i18n="education."+school+".status")
 
 mixin course(course, details)
     .col-sm-4.p-1.mb-2
         .card
             .card-header
-                h5.card-title(data-i18n="courses."+course+".title")
-                h6.card-subtitle.mb-2.text-muted #{details.place}
+                h4.card-title(data-i18n="courses."+course+".title")
+                h5.card-subtitle.mb-2.text-muted #{details.place}
             .card-body 
                 p.card-text(data-i18n="courses."+course+".description")
             .card-footer.text-end.text-muted 

@@ -9,7 +9,7 @@
   },
   "hero": {
     "subtitle": "Ingeniero. Geek. Programador.",
-    "description": "Ingeniero en Cibernética con más de 9 años de experiencia en el área de Tecnologías de la Información, en empresas de diferentes giros participando en los departamentos de Soporte Técnico y Desarrollo Web.",
+    "description": "Ingeniero en Cibernética y Sistemas Computacionales con casi 14 años de experiencia especializado en Desarrollo Web y arquitectura de software, entregando soluciones técnicas escalables y de alto rendimiento desde 2012.",
     "contact": "Contacto",
     "viewResume": "Ver CV"
   },
@@ -39,6 +39,7 @@
     "lasalle": {
       "university": "Universidad La Salle",
       "bachelor": "Ingeniero en Cibernética y Sistemas Computacionales",
+      "description": "Generar soluciones que contribuyan a la transformación digital de las organizaciones, mediante la automatización de sistemas informáticos y gestión de procesos de negocio con manejo seguro de la información, considerando estándares internacionales y una perspectiva de sustentabilidad, ética profesional y responsabilidad social.",
       "status": "Titulado"
     }
   },

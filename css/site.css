@@ -1,14 +1,16 @@
 :root {
   --main-color: #ccc;
-  --point-color: #555;
+  --point-color: #333;
   --size: 5px;
 }
 
 body,
 html {
   min-height: 100%;
-  background: #ccc;
+  background: #fbfbfb;
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 48px; 
 }
 
 header {
@@ -21,7 +23,7 @@ header {
 }
 
 .bg-primary {
-  background-color: #1405af !important;
+  background-color: #333 !important;
 }
 
 nav.navbar i {
@@ -32,24 +34,35 @@ nav.navbar div.dropdown ul {
   background-color: #1405af !important;
 }
 
-.container#content {
-  background: #fbfbfb;
+body {
+  position: relative;
 }
+
+body::before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   top: 0;
+   right: 0;
+   position: fixed;
+   background: radial-gradient(#32CD32,transparent),linear-gradient(135deg,
+		#1E90FF,transparent),linear-gradient(-135deg,#d55e0f,transparent);
+  background-blend-mode: screen;
+   animation: hue 6s 0s linear infinite, move1 10s 0s linear infinite; 
+}
+
 
 /* The hero image */
 
 .hero {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/cover.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)),
+    url("../img/cover.png") !important;
   /* Set a specific height */
-  height: auto;
+  height: auto !important;
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  position: relative;
-  color: white;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 img.avatar {
@@ -66,6 +79,7 @@ p {
   white-space: pre-line;
   text-align: justify;
   line-height: 2em;
+  position: relative;
 }
 
 span.skill,
@@ -91,11 +105,12 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   letter-spacing: 0.25rem;
+  position: relative;
 }
 
 h2:before {
   content: "";
-  border-bottom: solid 2px #1405af;
+  border-bottom: solid 2px #333;
   width: 5rem;
   display: block;
   margin-left: auto;
@@ -106,25 +121,30 @@ h2:before {
 
 h3.text-primary,
 .card-title {
-  color: #1004d1 !important;
+  color: #333 !important;
   font-variant: all-small-caps;
   letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #fff !important;
 }
 
 h4.text-primary,
 .card-subtitle {
-  color: #1405af !important;
+  color: #333 !important;
   font-variant: all-small-caps;
+  color: #fff !important;
+  font-style: italic;
+
 }
 
 [data-bs-toggle="tooltip"] {
   cursor: pointer;
 }
 
-section {
+/* section {
   padding-top: 164px;
   margin-top: -164px !important;
-}
+} */
 
 img.card-img-top.project {
   height: 350px;
@@ -133,12 +153,74 @@ img.card-img-top.project {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.btn-primary {
+.card, 
+.modal-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px) saturate(1.2);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+   rgba(0, 0, 0, 0.1) 0px 8px 32px, 
+   rgba(0, 0, 0, 0.5) 0px 1px 2px, 
+   rgba(255, 255, 255, 0.1) 0px -1px 0px inset, 
+   rgba(255, 255, 255, 0.04) 0px -1px 0px inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.card .card-header,
+.modal-content .modal-header {
+  background-color: rgba(20, 5, 175, 0.3);
+  backdrop-filter: blur(10px) saturate(1.2);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2);
+}
+
+ p {
+  box-shadow: inset 0 1px 12px 0 #00000080;
+  border-radius: 9px;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 1rem 2rem 1rem;
+  resize: none;
+}
+
+.btn-primary { 
   background-color: #1004d1;
   border-color: #1004d1;
 }
 
-[id*="ontact"] .card {
+[id*="contact"] .card {
   border: none;
 }
 
@@ -180,6 +262,12 @@ img.card-img-top.project {
 @keyframes preloader {
   100% {
     transform: scale(2);
+  }
+}
+
+@keyframes hue {
+   100% {
+    filter: hue-rotate(360deg);
   }
 }
 

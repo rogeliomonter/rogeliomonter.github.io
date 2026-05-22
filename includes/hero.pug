@@ -5,12 +5,12 @@
                     //- img(class="d-block mx-auto mb-4 rounded-circle img-fluid avatar", src="img/me.jpg", alt=name, width="72", height="72")
                     h1.p-3.display-5.text-center.fw-bold #{name}
                     h3.text-center(data-i18n="hero.subtitle")
-                    .d-flex.justify-content-evenly.w-50.mx-auto.fa-2x.pb-3.mt-3
-                        a.btn.btn-outline-light.w-25(href="https://stackoverflow.com/users/"+stackOverflow, target="_blank")
+                    .d-flex.justify-content-evenly.col-lg-6.mx-auto.pt-3.pb-5
+                        a.btn.btn-outline-light.w-25(href="https://stackoverflow.com/users/"+stackOverflow, target="_blank" aria-label="Visit Stack Overflow profile")
                             i.fab.fa-stack-overflow.fa-2x
-                        a.btn.btn-outline-light.w-25(href="https://www.linkedin.com/in/"+linkedin, target="_blank")
+                        a.btn.btn-outline-light.w-25(href="https://www.linkedin.com/in/"+linkedin, target="_blank" aria-label="Visit LinkedIn profile")
                             i.fab.fa-linkedin.fa-2x
-                        a.btn.btn-outline-light.w-25(href="https://github.com/"+github, target="_blank")
+                        a.btn.btn-outline-light.w-25(href="https://github.com/"+github, target="_blank" aria-label="Visit GitHub profile")
                             i.fab.fa-github.fa-2x
                 .card-body
                     .col-lg-6.mx-auto.pt-3.pb-5

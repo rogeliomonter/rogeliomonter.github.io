@@ -2,7 +2,7 @@
 nav.navbar.navbar-expand-lg.py-2.mb-4.sticky-top.navbar-dark.bg-primary.border-bottom.shadow-sm
     .container
         a.navbar-brand.d-flex.align-items-center.me-md-auto.text-light.text-decoration-none.d-block.d-sm-block.d-md-none(href="/")
-            img.bi.me-2.p-1(src="img/logo.png" height="60")
+            img.bi.me-2.p-1(src="img/logo.png" height="60" alt="Rogelio Monter — logo")
             | #{name}
         button.navbar-toggler.float-end(type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
             span.fas.fa-bars
@@ -12,6 +12,6 @@ nav.navbar.navbar-expand-lg.py-2.mb-4.sticky-top.navbar-dark.bg-primary.border-b
                     li.nav-item
                         a(class="nav-link link-light px-2 active" href="#"+section data-i18n="nav."+section)
             div.d-flex.justify-content-end
-                label.col-form-label.me-3
+                label.col-form-label.me-3(for="languageSwitcher")
                     i.fas.fa-globe
-                select#languageSwitcher(class="form-select form-select-sm" name="language")
+                select#languageSwitcher(class="form-select form-select-sm" name="language" aria-label="Select language")

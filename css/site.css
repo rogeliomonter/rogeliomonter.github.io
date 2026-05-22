@@ -23,15 +23,21 @@ header {
 }
 
 .bg-primary {
+  background-color: #333;
+}
+
+nav.navbar {
   background-color: #333 !important;
 }
 
 nav.navbar i {
   color: white;
 }
-
+nav.navbar .nav-link {
+  color: #fff !important;
+}
 nav.navbar div.dropdown ul {
-  background-color: #1405af !important;
+  background-color: #333;
 }
 
 body {
@@ -47,8 +53,8 @@ body::before {
    position: fixed;
    background: radial-gradient(#32CD32,transparent),linear-gradient(135deg,
 		#1E90FF,transparent),linear-gradient(-135deg,#d55e0f,transparent);
-  background-blend-mode: screen;
-   animation: hue 6s 0s linear infinite, move1 10s 0s linear infinite; 
+    background-blend-mode: screen;
+   animation: hue 6s 0s linear infinite; 
 }
 
 
@@ -98,7 +104,7 @@ span.contact {
 }
 
 .text-black-50 {
-  color: #1c1f2b !important;
+  color: #1c1f2b!important;
 }
 
 h2 {
@@ -120,21 +126,19 @@ h2:before {
 }
 
 h3.text-primary,
-.card-title {
-  color: #333 !important;
+.card-title,
+h5 {
   font-variant: all-small-caps;
   letter-spacing: 0.1rem;
   font-weight: 600;
-  color: #fff !important;
+  color: #333;
 }
 
 h4.text-primary,
 .card-subtitle {
-  color: #333 !important;
   font-variant: all-small-caps;
-  color: #fff !important;
+  color: #fff;
   font-style: italic;
-
 }
 
 [data-bs-toggle="tooltip"] {
@@ -206,7 +210,12 @@ img.card-img-top.project {
   -webkit-backdrop-filter: blur(10px) saturate(1.2);
 }
 
- p {
+/* Consolidated paragraph styles */
+p {
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2em;
+  position: relative;
   box-shadow: inset 0 1px 12px 0 #00000080;
   border-radius: 9px;
   background-color: #333;
@@ -283,11 +292,11 @@ img.card-img-top.project {
 
 @media (max-width: 475px) {
   nav.navbar.bg-primary {
-    background: rgba(69, 59, 237, 0.3);
+    background: rgba(51, 51, 51, 0.3);
     background: linear-gradient(
       180deg,
-      rgba(10, 3, 125, 1) 0%,
-      rgba(20, 5, 175, 1) 90%
+      rgba(51, 51, 51, 1) 0%,
+      rgba(51, 51, 51, 1) 90%
     );
   }
   .d-flex > .card {
